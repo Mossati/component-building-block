@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background-primary: #51c7b3;
+    --background-secondary: #0b929e;
+    --background-tertiary: #00363d;
+    --text-primary: #01191c;
+    --text-secondary: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Open Sans", serif;
+    font-weight: 200;
+    background-color: var(--background-tertiary);
+    background-image: linear-gradient(90deg, var(--background-secondary), var(--background-tertiary));
+    color: var(--text-primary);
+    padding: 1rem;
+}
