@@ -2,6 +2,8 @@
 Ik heb een simpel ontwerp gemaakt in Figma voor een card component.
 * [Figma Design](https://www.figma.com/proto/KLXVoYxsyp2glrm6jzBnVm/Untitled?node-id=0-1&t=KBPtJceTm1O6Iqvx-1)
 
+![image](https://github.com/user-attachments/assets/fac1d000-7699-4ac8-8b1f-7f6148437fc3)
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
