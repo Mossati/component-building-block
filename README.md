@@ -1,3 +1,7 @@
+# Deloitte | Card Component
+Ik heb een simpel ontwerp gemaakt in Figma voor ee card component.
+[Figma Design](https://www.figma.com/proto/KLXVoYxsyp2glrm6jzBnVm/Untitled?node-id=0-1&t=KBPtJceTm1O6Iqvx-1)
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
