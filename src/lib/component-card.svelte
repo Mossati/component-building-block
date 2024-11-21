@@ -16,13 +16,15 @@
 
 <style>
     li {
+        container-type: inline-size;
         padding: 0.5rem;
-        background-image: linear-gradient(345deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+        background-image: linear-gradient(345deg, var(--background-75), var(--background-100));
         border-radius: 1rem;
-        flex : 1;
+        /* flex : 1; */
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        width: calc(100%/4);
         min-height: 25rem;
         box-shadow: 
         inset 0 0.05rem 0.05rem 0 rgba(255, 255, 255, 0.2),
@@ -60,7 +62,7 @@
 
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -100,9 +102,27 @@
         /* backdrop-filter: blur(0.5rem); */
         border-radius: 0.5rem;
         padding: 0.5rem;
+        width: 100%;
     }
 
     .visual-card article p {
         color: var(--text-secondary);
+    }
+
+    @container (width <= 12rem) {
+    li {
+        min-height: 15rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article p {
+        display: none;
+    }
     }
 </style>

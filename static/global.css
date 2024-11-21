@@ -4,9 +4,23 @@
     --background-primary: #51c7b3;
     --background-secondary: #0b929e;
     --background-tertiary: #00363d;
+    --background-100: rgba(255, 255, 255, 1);
+    --background-75: rgba(255, 255, 255, 0.75);
     --text-primary: #01191c;
     --text-secondary: #ffffff;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-primary: #51c7b3;
+        --background-secondary: #05535b;
+        --background-tertiary: #00171a;
+        --background-100: rgba(12, 12, 12, 1);
+        --background-75: rgba(12, 12, 12, 0.75);
+        --text-primary: #ffffff;
+        --text-secondary: #ffffff;
+    }
+  }
 
 * {
     padding: 0;
