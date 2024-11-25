@@ -20,15 +20,15 @@
         padding: 0.5rem;
         background-image: linear-gradient(345deg, var(--background-75), var(--background-100));
         border-radius: 1rem;
-        /* flex : 1; */
+        flex : 1;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         width: calc(100%/4);
         min-height: 25rem;
         box-shadow: 
-        inset 0 0.05rem 0.05rem 0 rgba(255, 255, 255, 0.2),
-        0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            inset 0 0.05rem 0.05rem 0 rgba(255, 255, 255, 0.2),
+            0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
 
     h2 {
