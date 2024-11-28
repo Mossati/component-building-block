@@ -2,20 +2,20 @@
     let {title, body, job, imgSrc, imgAlt, cardType} = $props();
 </script>
 
-<li class={cardType} style="--imgSrc: url('{imgSrc}')">
+<article class={cardType} style="--imgSrc: url('{imgSrc}')">
     <div>
         <img src={imgSrc} alt={imgAlt} width="100" height="100">
     </div>
 
-    <article>
+    <div>
         <span>{job}</span>
         <h2>{title}</h2>
         <p>{body}</p>
-    </article>
-</li>
+    </div>
+</article>
 
 <style>
-    li {
+    article {
         container-type: inline-size;
         padding: 0.5rem;
         background-image: linear-gradient(345deg, var(--background-75), var(--background-100));
@@ -52,7 +52,7 @@
         overflow-y: hidden;
     }
 
-    div {
+    div:nth-of-type(1) {
         background-color: var(--background-secondary);
         border-radius: 0.5rem;
         width: 100%;
@@ -93,11 +93,11 @@
         }
     }
 
-    .visual-card div {
+    .visual-card div:nth-of-type(1) {
         display: none;
     }
 
-    .visual-card article {
+    .visual-card div:nth-of-type(2) {
         background-image: linear-gradient(0deg, rgb(0, 79, 89), transparent);
         /* backdrop-filter: blur(0.5rem); */
         border-radius: 0.5rem;
@@ -105,23 +105,23 @@
         width: 100%;
     }
 
-    .visual-card article p {
+    .visual-card div:nth-of-type(2) p {
         color: var(--text-secondary);
     }
 
     @container (width <= 12rem) {
-    li {
+    article {
         min-height: 15rem;
     }
 
-    article {
+    div:nth-of-type(1) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    article p {
+    div:nth-of-type(1) p {
         display: none;
     }
     }
